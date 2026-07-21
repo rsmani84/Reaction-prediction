@@ -1,3 +1,4 @@
+pip install streamlit rdkit
 import streamlit as st
 from rdkit import Chem
 from rdkit.Chem import rdChemReactions, Draw, Descriptors
