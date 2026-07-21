@@ -3,9 +3,5 @@ rdkit
 numpy
 pandas
 matplotlib
-plotly
 pillow
-scipy
-networkx
 mendeleev
-py3Dmol
