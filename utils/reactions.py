@@ -2,51 +2,52 @@ REACTIONS = {
 
     "Fischer Esterification": {
         "smarts": "[CX3:1](=[O:2])[OH].[OX2H:3]>>[CX3:1](=[O:2])[O:3]",
-        "reactants": ["CC(=O)O", "CCO"],
-        "dH": -15.4,
-        "dS": -42.3,
-        "catalyst": "H₂SO₄",
-        "solvent": "Ethanol",
-        "temperature": "60–80 °C",
-        "mechanism": [
-            "Protonation of carbonyl oxygen",
-            "Nucleophilic attack by alcohol",
-            "Formation of tetrahedral intermediate",
-            "Elimination of water",
-            "Deprotonation to give ester"
-        ]
+        "reactants": ["CC(=O)O", "CCO"]
     },
 
     "Amide Formation": {
         "smarts": "[CX3:1](=[O:2])[OH].[NX3H2:3]>>[CX3:1](=[O:2])[N:3]",
-        "reactants": ["CC(=O)O", "CN"],
-        "dH": -25.8,
-        "dS": -35.5,
-        "catalyst": "DCC / EDC",
-        "solvent": "DMF",
-        "temperature": "25 °C",
-        "mechanism": [
-            "Activation of carboxylic acid",
-            "Nucleophilic attack by amine",
-            "Formation of tetrahedral intermediate",
-            "Elimination of water",
-            "Amide formation"
-        ]
+        "reactants": ["CC(=O)O", "CN"]
     },
 
     "SN1 Reaction": {
-        "smarts": "...",
-        "reactants": ["CC(C)Br", "O"],
-        "dH": -18.0,
-        "dS": 15.0,
-        "catalyst": "None",
-        "solvent": "Water",
-        "temperature": "25 °C",
-        "mechanism": [
-            "Leaving group departs",
-            "Carbocation formation",
-            "Nucleophilic attack",
-            "Deprotonation"
-        ]
+        "smarts": "",
+        "reactants": ["CC(C)Br", "O"]
+    },
+
+    "SN2 Reaction": {
+        "smarts": "[C:1][Br].[O-:2]>>[C:1][O:2]",
+        "reactants": ["CCBr", "[OH-]"]
+    },
+
+    "E1 Elimination": {
+        "smarts": "",
+        "reactants": ["CC(C)Br", "O"]
+    },
+
+    "E2 Elimination": {
+        "smarts": "",
+        "reactants": ["CCBr", "[OH-]"]
+    },
+
+    "Grignard Reaction": {
+        "smarts": "",
+        "reactants": ["CC(=O)C", "CC[Mg]Br"]
+    },
+
+    "Aldol Condensation": {
+        "smarts": "",
+        "reactants": ["CC=O", "CC=O"]
+    },
+
+    "Friedel-Crafts Alkylation": {
+        "smarts": "",
+        "reactants": ["c1ccccc1", "CCl"]
+    },
+
+    "Diels-Alder Reaction": {
+        "smarts": "",
+        "reactants": ["C=CC=C", "C=C"]
     }
+
 }
