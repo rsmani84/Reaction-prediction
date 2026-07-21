@@ -1,11 +1,11 @@
-streamlit
+streamlit>=1.45
 rdkit
-pandas
 numpy
+pandas
 matplotlib
 plotly
-py3Dmol
-mendeleev
 pillow
 scipy
 networkx
+mendeleev
+py3Dmol
