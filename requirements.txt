@@ -1,4 +1,11 @@
 streamlit
 rdkit
-pillow
+pandas
+numpy
+matplotlib
+plotly
+py3Dmol
 mendeleev
+pillow
+scipy
+networkx
