@@ -1,7 +1,6 @@
-streamlit>=1.45
+streamlit==1.45.1
 rdkit
 numpy
 pandas
 matplotlib
 pillow
-mendeleev
