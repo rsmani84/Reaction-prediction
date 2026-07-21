@@ -1,0 +1,4 @@
+streamlit
+rdkit
+pillow
+mendeleev
