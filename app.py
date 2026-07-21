@@ -29,3 +29,31 @@ st.image(
 )
 
 st.info("Select a module from the left sidebar.")
+
+from utils.thermo import gibbs_energy
+from utils.thermo import spontaneity
+
+temperature = st.slider(
+    "Temperature (°C)",
+    0,
+    200,
+    25
+)
+
+dH = -25.4
+
+dS = -42.5
+
+dG = gibbs_energy(
+    dH,
+    dS,
+    temperature
+)
+
+st.metric("ΔH",f"{dH} kJ/mol")
+
+st.metric("ΔS",f"{dS} J/mol.K")
+
+st.metric("ΔG",f"{dG} kJ/mol")
+
+st.success(spontaneity(dG))
